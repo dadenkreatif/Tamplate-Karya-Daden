@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #6366f1; /* Indigo */
+    --secondary-color: #a855f7; /* Purple */
+    --dark-color: #1e293b;
+    --light-bg: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+}
+
+/* Teks Berjalan */
+.top-bar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: var(--primary-color);
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Style */
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.category {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f172a;
+    margin: 10px 0;
+}
+
+.payment-info {
+    font-size: 0.85rem;
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Button WA */
+.btn-wa {
+    display: block;
+    text-align: center;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-wa:hover {
+    background-color: #128c7e;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+}
